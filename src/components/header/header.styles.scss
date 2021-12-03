@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(18, 18, 18, .93);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
+
+    .header-item {
+        margin: 0 1.95rem;
+
+        @media screen and (min-width: 481px) {margin: 0 2.025rem;}
+        @media screen and (min-width: 721px) {margin: 0 2.1rem;}
+        @media screen and (min-width: 961px) {margin: 0 2.175rem;}
+        @media screen and (min-width: 1201px) {margin: 0 2.25rem;}
+        @media screen and (min-width: 1441px) {margin: 0 2.325rem;}
+        @media screen and (min-width: 1681px) {margin: 0 2.4rem;}
+        @media screen and (min-width: 1921px) {margin: 0 2.7rem;}
+        @media screen and (min-width: 2161px) {margin: 0 3.0rem;}
+        @media screen and (min-width: 2401px) {margin: 0 3.3rem;}
+        @media screen and (min-width: 2641px) {margin: 0 3.6rem;}
+        @media screen and (min-width: 2881px) {margin: 0 3.9rem;}
+        @media screen and (min-width: 3121px) {margin: 0 4.2rem;}
+        @media screen and (min-width: 3361px) {margin: 0 4.5rem;}
+        @media screen and (min-width: 3601px) {margin: 0 4.8rem;}
+
+        &:first-child {
+            margin: 0 1.95rem 0 3.9rem;
+
+            @media screen and (min-width: 481px) {margin: 0 2.025rem 0 4.05rem;}
+            @media screen and (min-width: 721px) {margin: 0 2.1rem 0 4.2rem;}
+            @media screen and (min-width: 961px) {margin: 0 2.175rem 0 4.35rem;}
+            @media screen and (min-width: 1201px) {margin: 0 2.25rem 0 4.5rem;}
+            @media screen and (min-width: 1441px) {margin: 0 2.325rem 0 4.65rem;}
+            @media screen and (min-width: 1681px) {margin: 0 2.4rem 0 4.8rem;}
+            @media screen and (min-width: 1921px) {margin: 0 2.7rem 0 5.4rem;}
+            @media screen and (min-width: 2161px) {margin: 0 3.0rem 0 6.0rem;}
+            @media screen and (min-width: 2401px) {margin: 0 3.3rem 0 6.6rem;}
+            @media screen and (min-width: 2641px) {margin: 0 3.6rem 0 7.2rem;}
+            @media screen and (min-width: 2881px) {margin: 0 3.9rem 0 7.8rem;}
+            @media screen and (min-width: 3121px) {margin: 0 4.2rem 0 8.4rem;}
+            @media screen and (min-width: 3361px) {margin: 0 4.5rem 0 9.0rem;}
+            @media screen and (min-width: 3601px) {margin: 0 4.8rem 0 9.6rem;}
+        }
+
+        &:last-child {
+            margin: 0 3.9rem 0 1.95rem;
+
+            @media screen and (min-width: 481px) {margin: 0 4.05rem 0 2.025rem;}
+            @media screen and (min-width: 721px) {margin: 0 4.2rem 0 2.1rem;}
+            @media screen and (min-width: 961px) {margin: 0 4.35rem 0 2.175rem;}
+            @media screen and (min-width: 1201px) {margin: 0 4.5rem 0 2.25rem;}
+            @media screen and (min-width: 1441px) {margin: 0 4.65rem 0 2.325rem;}
+            @media screen and (min-width: 1681px) {margin: 0 4.8rem 0 2.4rem;}
+            @media screen and (min-width: 1921px) {margin: 0 5.4rem 0 2.7rem;}
+            @media screen and (min-width: 2161px) {margin: 0 6.0rem 0 3.0rem;}
+            @media screen and (min-width: 2401px) {margin: 0 6.6rem 0 3.3rem;}
+            @media screen and (min-width: 2641px) {margin: 0 7.2rem 0 3.6rem;}
+            @media screen and (min-width: 2881px) {margin: 0 7.8rem 0 3.9rem;}
+            @media screen and (min-width: 3121px) {margin: 0 8.4rem 0 4.2rem;}
+            @media screen and (min-width: 3361px) {margin: 0 9.0rem 0 4.5rem;}
+            @media screen and (min-width: 3601px) {margin: 0 9.6rem 0 4.8rem;}
+        }
+    }
+
+    .logo-text {
+        color: rgba(237, 237, 237, 1);
+
+        font-size: 2.4rem;
+
+        @media screen and (min-width: 481px) {font-size: 2.5rem;}
+        @media screen and (min-width: 721px) {font-size: 2.6rem;}
+        @media screen and (min-width: 961px) {font-size: 2.7rem;}
+        @media screen and (min-width: 1201px) {font-size: 2.8rem;}
+        @media screen and (min-width: 1441px) {font-size: 2.9rem;}
+        @media screen and (min-width: 1681px) {font-size: 3rem;}
+        @media screen and (min-width: 1921px) {font-size: 3.375rem;}
+        @media screen and (min-width: 2161px) {font-size: 3.75rem;}
+        @media screen and (min-width: 2401px) {font-size: 4.125rem;}
+        @media screen and (min-width: 2641px) {font-size: 4.5rem;}
+        @media screen and (min-width: 2881px) {font-size: 4.875rem;}
+        @media screen and (min-width: 3121px) {font-size: 5.25rem;}
+        @media screen and (min-width: 3361px) {font-size: 5.625rem;}
+        @media screen and (min-width: 3601px) {font-size: 6rem;}
+        
+        &:hover, 
+        &:focus {
+            cursor: pointer;
+            filter: drop-shadow(0 0 .3rem rgba(237, 237, 237, 1));
+        }
+    }
+
+    .search-box {
+        border-radius: 3.6rem;
+        font-weight: 500;
+        color: rgba(237, 237, 237, 1);
+        background-color: rgba(56, 56, 56, 1);
+        transition: width .5s ease;
+        
+        padding: .8rem 1.4rem;
+        font-size: 1.1rem;
+        width: 11.4rem;
+
+        @media screen and (min-width: 481px) {padding: .9rem 1.5rem; font-size: 1.2rem; width: 12.6rem;}
+        @media screen and (min-width: 1681px) {padding: .9rem 1.5rem; font-size: 1.2rem; width: 12.6rem;}
+        @media screen and (min-width: 1921px) {padding: 1.0125rem 1.6875rem; font-size: 1.35rem; width: 14.175rem;}
+        @media screen and (min-width: 2161px) {padding: 1.125rem 1.875rem; font-size: 1.5rem; width: 15.75rem;}
+        @media screen and (min-width: 2401px) {padding: 1.2375rem 2.0625rem; font-size: 1.65rem; width: 17.325rem;}
+        @media screen and (min-width: 2641px) {padding: 1.35rem 2.25rem; font-size: 1.8rem; width: 18.9rem;}
+        @media screen and (min-width: 2881px) {padding: 1.4625rem 2.4375rem; font-size: 1.95rem; width: 20.475rem;}
+        @media screen and (min-width: 3121px) {padding: 1.575rem 2.625rem; font-size: 2.1rem; width: 22.05rem;}
+        @media screen and (min-width: 3361px) {padding: 1.6875rem 2.8125rem; font-size: 2.25rem; width: 23.625rem;}
+        @media screen and (min-width: 3601px) {padding: 1.8rem 3.0rem; font-size: 2.4rem; width: 25.2rem;}
+
+        &:hover,
+        &:focus {
+
+            @media screen and (min-width: 397px)  {width: 18.9rem;}
+            @media screen and (min-width: 1921px) {width: 21.2625rem;}
+            @media screen and (min-width: 2161px) {width: 23.625rem;}
+            @media screen and (min-width: 2401px) {width: 25.9875rem;}
+            @media screen and (min-width: 2641px) {width: 28.35rem;}
+            @media screen and (min-width: 2881px) {width: 30.7125rem;}
+            @media screen and (min-width: 3121px) {width: 33.075rem;}
+            @media screen and (min-width: 3361px) {width: 35.4375rem;}
+            @media screen and (min-width: 3601px) {width: 37.8rem;}
+        }
+
+        &::placeholder {
+            color: rgba(199, 199, 199, 1);
+            opacity: 1; // Fixes firefox bug, allows color property above to work on placeholder
+        }
+    }
+}
+

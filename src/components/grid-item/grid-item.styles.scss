@@ -1,0 +1,157 @@
+.grid-item {
+    position: relative;
+    overflow: hidden;
+
+    .grid-item-icon {
+        width: 2.4rem;
+
+        @media screen and (min-width: 481px) {width: 2.7rem;}
+        @media screen and (min-width: 721px) {width: 2.4rem;}
+        @media screen and (min-width: 961px) {width: 2.7rem;}
+        @media screen and (min-width: 1201px) {width: 2.4rem;}
+        @media screen and (min-width: 1441px) {width: 2.7rem;}
+        @media screen and (min-width: 1681px) {width: 0 2.4rem;}
+        @media screen and (min-width: 1921px) {width: 0 2.7rem;}
+        @media screen and (min-width: 2161px) {width: 0 3.0rem;}
+        @media screen and (min-width: 2401px) {width: 0 3.3rem;}
+        @media screen and (min-width: 2641px) {width: 0 3.6rem;}
+        @media screen and (min-width: 2881px) {width: 0 3.9rem;}
+        @media screen and (min-width: 3121px) {width: 0 4.2rem;}
+        @media screen and (min-width: 3361px) {width: 0 4.5rem;}
+        @media screen and (min-width: 3601px) {width: 0 4.8rem;}
+
+        &.enter  {
+            position: absolute;
+            right: 0;
+            color: rgba(237, 237, 237, 1);
+            filter: drop-shadow(0px 0px .3rem rgba(18, 18, 18, 1));
+
+            margin: 1.8rem;
+
+            @media screen and (min-width: 481px) {margin: 2.1rem;}
+            @media screen and (min-width: 721px) {margin: 1.8rem;}
+            @media screen and (min-width: 961px) {margin: 2.1rem;}
+            @media screen and (min-width: 1201px) {margin: 1.8rem;}
+            @media screen and (min-width: 1441px) {margin: 2.1rem;}
+            @media screen and (min-width: 1681px) {margin: 1.8rem;}
+            @media screen and (min-width: 1921px) {margin: 2.025rem;}
+            @media screen and (min-width: 2161px) {margin: 2.25rem;}
+            @media screen and (min-width: 2401px) {margin: 2.475rem;}
+            @media screen and (min-width: 2641px) {margin: 2.7rem;}
+            @media screen and (min-width: 2881px) {margin: 2.925rem;}
+            @media screen and (min-width: 3121px) {margin: 3.15rem;}
+            @media screen and (min-width: 3361px) {margin: 3.375rem;}
+            @media screen and (min-width: 3601px) {margin: 3.6rem;}
+
+            .enter-icon {
+                transform: rotate(45deg);
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .grid-item-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(237, 237, 237, .67);
+        color: rgba(18, 18, 18, 1);
+        transform: translateY(-101%); // extra 1 percent to hide entire container on some browsers
+        transition: transform .5s ease;
+        overflow: hidden;
+
+        padding: 1.8rem;
+
+        @media screen and (min-width: 481px) {padding: 2.1rem;}
+        @media screen and (min-width: 721px) {padding: 1.8rem;}
+        @media screen and (min-width: 961px) {padding: 2.1rem;}
+        @media screen and (min-width: 1201px) {padding: 1.8rem;}
+        @media screen and (min-width: 1441px) {padding: 2.1rem;}
+        @media screen and (min-width: 1681px) {padding: 1.8rem;}
+        @media screen and (min-width: 1921px) {padding: 2.025rem;}
+        @media screen and (min-width: 2161px) {padding: 2.25rem;}
+        @media screen and (min-width: 2401px) {padding: 2.475rem;}
+        @media screen and (min-width: 2641px) {padding: 2.7rem;}
+        @media screen and (min-width: 2881px) {padding: 2.925rem;}
+        @media screen and (min-width: 3121px) {padding: 3.15rem;}
+        @media screen and (min-width: 3361px) {padding: 3.375rem;}
+        @media screen and (min-width: 3601px) {padding: 3.6rem;}
+
+        .grid-item-top-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .grid-item-title {
+            font-weight: 600;
+
+            font-size: 1.8rem;
+
+            @media screen and (min-width: 481px) {font-size: 2.1rem;}
+            @media screen and (min-width: 721px) {font-size: 1.8rem;}
+            @media screen and (min-width: 961px) {font-size: 2.1rem;}
+            @media screen and (min-width: 1201px) {font-size: 1.8rem;}
+            @media screen and (min-width: 1441px) {font-size: 2.1rem;}
+            @media screen and (min-width: 1681px) {font-size: 1.8rem;}
+            @media screen and (min-width: 1921px) {font-size: 2.025rem;}
+            @media screen and (min-width: 2161px) {font-size: 2.25rem;}
+            @media screen and (min-width: 2401px) {font-size: 2.475rem;}
+            @media screen and (min-width: 2641px) {font-size: 2.7rem;}
+            @media screen and (min-width: 2881px) {font-size: 2.925rem;}
+            @media screen and (min-width: 3121px) {font-size: 3.15rem;}
+            @media screen and (min-width: 3361px) {font-size: 3.375rem;}
+            @media screen and (min-width: 3601px) {font-size: 3.6rem;}
+        }     
+    }
+
+    .image {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .grid-item {
+
+        .enter {
+            opacity: 0;
+            transition: opacity .2s ease;
+        }
+        &:hover {
+            
+            .enter {
+                opacity: 1;
+                transition: opacity .2s ease;
+            }
+        }
+    }
+}
+
+/* Conditionally rendered CSS */
+
+.grid-item {
+
+    &.open {
+
+        .grid-item-overlay {
+            transform: translateY(0%);
+        }
+    }
+}
+
+.grid-item {
+
+    &.closed {
+
+        .grid-item-overlay {
+            transform: translateY(-101%);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/*
+Imfinity notes
+Website dimensions is in multiples of .6rem in most cases (using html{font-size: 62.5;}) 
+*/
+
+/* CSS Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Clears search 'X' from Internet Explorer
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+
+// Clears search 'X' from Chrome
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.App {
+    display: grid;
+    min-height: 100vh;
+    background-color: rgba(18, 18, 18, 1);
+
+    grid-template-rows: 7.8rem;
+    
+    @media screen and (min-width: 481px) {grid-template-rows: 8.1rem;}
+    @media screen and (min-width: 721px) {grid-template-rows: 8.4rem;}
+    @media screen and (min-width: 961px) {grid-template-rows: 8.7rem;}
+    @media screen and (min-width: 1201px) {grid-template-rows: 9.0rem;}
+    @media screen and (min-width: 1441px) {grid-template-rows: 9.3rem;}
+    @media screen and (min-width: 1681px) {grid-template-rows: 9.6rem;}
+    @media screen and (min-width: 1921px) {grid-template-rows: 10.8rem}
+    @media screen and (min-width: 2161px) {grid-template-rows: 12rem}
+    @media screen and (min-width: 2401px) {grid-template-rows: 13.2rem}
+    @media screen and (min-width: 2641px) {grid-template-rows: 14.4rem}
+    @media screen and (min-width: 2881px) {grid-template-rows: 15.6rem}
+    @media screen and (min-width: 3121px) {grid-template-rows: 16.8rem}
+    @media screen and (min-width: 3361px) {grid-template-rows: 18rem}
+    @media screen and (min-width: 3601px) {grid-template-rows: 19.2rem;}
+}
+
+input {
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Colors
+
+Dark Shades
+
+#121212 rgba(18, 18, 18, 1)
+#1E1E1E rgba(30, 30, 30, 1)
+#232323 rgba(35, 35, 35, 1)
+#252525 rgba(37, 37, 37, 1)
+#272727 rgba(39, 39, 39, 1)
+#2C2C2C rgba(44, 44, 44, 1)
+#2F2F2F rgba(47, 47, 47, 1)
+#333333 rgba(51, 51, 51, 1)
+#353535 rgba(53, 53, 53, 1)
+#383838 rgba(56, 56, 56, 1)
+
+Light Shades
+
+#EDEDED rgba(237, 237, 237, 1)
+#E1E1E1 rgba(225, 225, 225, 1)
+#DCDCDC rgba(220, 220, 220, 1)
+#DADADA rgba(218, 218, 218, 1)
+#D8D8D8 rgba(216, 216, 216, 1)
+#D3D3D3 rgba(211, 211, 211, 1)
+#D0D0D0 rgba(208, 208, 208, 1)
+#CCCCCC rgba(204, 204, 204, 1)
+#CACACA rgba(202, 202, 202, 1)
+#C7C7C7 rgba(199, 199, 199, 1)
+
+*/
