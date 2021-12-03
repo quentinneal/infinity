@@ -100,11 +100,6 @@ function App() {
       }
       setNasaData(modNasaData) // Set modified array as state.
   };
-
-  /* Console logs (to be deleted)*/
-  console.log(page);
-  console.log(nasaData);
-  console.log(query)
   
   return (
     <div className='App'>
