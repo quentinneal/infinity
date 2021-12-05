@@ -84,7 +84,7 @@ function App() {
   /* Search query function */
   const handleSearch = (e) => {
     if (e.key === 'Enter' && e.target.value !== query) {
-      window.scrollTo({top: 0})
+      window.scrollTo(0, 0);
       queryRef.current.blur(); // Unfocus (for exiting mobile keyboard)
       setNasaData([]);
       setPage(1);
