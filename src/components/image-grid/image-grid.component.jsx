@@ -20,7 +20,8 @@ const ImageGrid = ({ nasaData, handleReadMore, intersectionRef }) => {
                         handleReadMore={handleReadMore} 
                         title={data[0].title} 
                         alt={data[0].title} 
-                        image={links[0].href} 
+                        image={links[0].href}
+                        description={data[0].description}
                         readMore={readMore} 
                         i={i} 
                     />
@@ -30,7 +31,8 @@ const ImageGrid = ({ nasaData, handleReadMore, intersectionRef }) => {
                         handleReadMore={handleReadMore} 
                         title={data[0].title} 
                         alt={data[0].title} 
-                        image={links[0].href} 
+                        image={links[0].href}
+                        description={data[0].description}
                         readMore={readMore} 
                         i={i} 
                     />
