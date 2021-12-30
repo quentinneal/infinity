@@ -1,0 +1,25 @@
+@keyframes loadingAnimation {
+    0% {
+      box-shadow: -7.2rem 0 rgba(237, 237, 237, 1) inset;
+    }
+    100% {
+      box-shadow: 4.8rem 0 rgba(237, 237, 237, 1) inset;
+    }
+  }
+
+.loading-bar {
+    background-color: rgba(18, 18, 18, 1);
+    padding: 3.0rem;
+    display: flex;
+    justify-content: center;
+
+    .loader {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: loadingAnimation 1s linear infinite;
+      }
+}
+  

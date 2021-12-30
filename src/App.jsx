@@ -106,7 +106,7 @@ function App() {
   return (
     <div className='App'>
       <Header queryRef={queryRef} handleLogoClick={handleLogoClick} handleSearch={handleSearch} query={query} />
-      <Content nasaData={nasaData} handleReadMore={handleReadMore} intersectionRef={intersectionRef}/>
+      <Content nasaData={nasaData} handleReadMore={handleReadMore} loading={loading} error={error} intersectionRef={intersectionRef}/>
     </div>
   );
 }

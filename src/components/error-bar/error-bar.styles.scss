@@ -1,0 +1,11 @@
+.error-bar {
+    background-color: rgba(18, 18, 18, 1);
+    padding: 3.0rem;
+    display: flex;
+    justify-content: center;
+
+    .error {
+        color: rgba(237, 237, 237, 1);
+        font-size: 1.8rem;
+      }
+}
