@@ -1,4 +1,4 @@
-# Imfinity
+# Infinity
 
 An Infinite scrolling application with search features. Uses the NASA Image and Video Library API.
 
@@ -6,7 +6,7 @@ An Infinite scrolling application with search features. Uses the NASA Image and 
 
 A temporary CORS error appears after a certain amount of API calls and/or if the API calls occur at a fast rate.
 
-[Demo](https://imfinity-live-quentin.herokuapp.com/)
+[Demo](https://infinity-live-quentin.herokuapp.com/)
 
 ## Technologies
 

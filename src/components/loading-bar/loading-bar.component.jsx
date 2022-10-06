@@ -7,7 +7,7 @@ import './loading-bar.styles.scss';
 const LoadingBar = () => {
     return (
         <div className="loading-bar">
-            <span class="loader"></span>
+            <span className="loader"></span>
         </div>
     )
 }

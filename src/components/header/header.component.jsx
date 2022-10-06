@@ -9,7 +9,7 @@ const Header = ({ queryRef, handleLogoClick, handleSearch, query }) => {
     return (
         <div className="header">
             <div className="header-item logo">
-                <span className="logo-text" onClick={handleLogoClick}>Imfinity</span>
+                <span className="logo-text" onClick={handleLogoClick}>Infinity</span>
             </div>
             <div className="header-item search">
                 <input 
