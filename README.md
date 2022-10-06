@@ -4,7 +4,7 @@ An Infinite scrolling application with search features. Uses the NASA Image and 
 
 ## Note: CORS
 
-A temporary CORS error appears after a certain amount of API calls and/or if the API calls occur at a fast rate.
+The API has a rate limit, and the website will temporarily stop calling the API after a certain amount of API calls. This is based on the IP address of the user.
 
 [Demo](https://infinity-live-quentin.herokuapp.com/)
 
